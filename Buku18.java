@@ -1,5 +1,5 @@
 public class Buku18 {
-  class buku {
+  class Buku {
     String judul, pengarang;
     int halaman, stok, harga;
 
@@ -21,6 +21,18 @@ public class Buku18 {
 
     void gantiHarga(int hrg) {
         harga = hrg;
+    }
+
+    public Buku(){
+
+    }
+
+    public Buku(String jud, String pg, int hal, int stok, int har){
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
     }
   }  
     

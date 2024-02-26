@@ -11,6 +11,10 @@ public class BukuMain18 {
         bk1.terjual(5);
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
+
+        Buku bk2 = new Buku ("Self Reward", "Maheera ayesha", 160, 29, 59000);
+        bk2.terjual(11);
+        bk2.tampilInformasi();
       }      
 }
 
@@ -36,5 +40,17 @@ class Buku {
 
     void gantiHarga(int hrg) {
         harga = hrg;
+    }
+
+    public Buku(){
+
+    }
+
+    public Buku(String jud, String pg, int hal, int stok, int har){
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
     }
   }  
